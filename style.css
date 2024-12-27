@@ -1,0 +1,142 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.protocol-select {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.protocol-select select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 150px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #003d82;
+}
+
+.system-row {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+select, input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+select {
+    min-width: 150px;
+}
+
+input[type="number"] {
+    width: 80px;
+}
+
+.recommendation {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.results ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.results li {
+    margin: 8px 0;
+    color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+#controllerList {
+    margin: 15px 0;
+}
+
+#controllerList div {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+span {
+    font-weight: 500;
+    color: #0056b3;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    max-width: 400px;
+}
