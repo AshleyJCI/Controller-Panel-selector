@@ -11,7 +11,7 @@
         <h1>JCI Controller Selection Tool</h1>
         
         <div class="protocol-select">
-            <label>Select Protocol:</label>
+            <label>Communication Protocol:</label>
             <select id="protocolSelect">
                 <option value="mstp">BACnet MSTP</option>
                 <option value="ip">BACnet IP</option>
@@ -25,27 +25,35 @@
         <div id="systemList"></div>
 
         <div id="recommendation" class="recommendation hidden">
-            <h2>Recommendation</h2>
+            <h2>System Requirements</h2>
             <div class="results">
-                <p>Hardware Points Required:</p>
-                <ul>
-                    <li>Universal Inputs (UI): <span id="totalUI">0</span></li>
-                    <li>Binary Inputs (BI): <span id="totalBI">0</span></li>
-                    <li>Binary Outputs (BO): <span id="totalBO">0</span></li>
-                    <li>Configurable Outputs (CO): <span id="totalCO">0</span></li>
-                    <li>Analog Outputs (AO): <span id="totalAO">0</span></li>
-                </ul>
+                <div class="points-section">
+                    <h3>Hardware Points Required:</h3>
+                    <ul>
+                        <li>Universal Inputs (UI): <span id="totalUI">0</span></li>
+                        <li>Binary Inputs (BI): <span id="totalBI">0</span></li>
+                        <li>Binary Outputs (BO): <span id="totalBO">0</span></li>
+                        <li>Configurable Outputs (CO): <span id="totalCO">0</span></li>
+                        <li>Analog Outputs (AO): <span id="totalAO">0</span></li>
+                    </ul>
+                </div>
                 
-                <p>Required Controllers:</p>
-                <div id="controllerList"></div>
+                <div class="controller-section">
+                    <h3>Controllers Required:</h3>
+                    <div id="controllerList"></div>
+                    <div id="expansionList"></div>
+                </div>
                 
-                <p>Total Devices: <span id="totalDevices">0</span></p>
-                <p>Recommended SNE: <span id="recommendedSNE">-</span></p>
-                <p>Panel Requirements:</p>
-                <p>Without Terminal Blocks: <span id="recommendedPanel">-</span></p>
-                <p>With Terminal Blocks: <span id="recommendedPanelTB">-</span></p>
+                <div class="summary-section">
+                    <h3>Network & Panel Requirements:</h3>
+                    <p>Total Field Devices: <span id="totalDevices">0</span></p>
+                    <p>SA Bus Device Count: <span id="saBusCount">0</span></p>
+                    <p>Recommended SNE: <span id="recommendedSNE">-</span></p>
+                    <p>Standard Panel: <span id="recommendedPanel">-</span></p>
+                    <p>Panel with Terminal Blocks: <span id="recommendedPanelTB">-</span></p>
+                </div>
                 
-                <div id="warnings"></div>
+                <div id="warnings" class="warnings-section"></div>
             </div>
         </div>
     </div>
